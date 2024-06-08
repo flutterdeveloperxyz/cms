@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/spur.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="../js/chart-js-config.js"></script>
+    <title>CMS-DASHBOARD</title>
+</head>
+
+<body>
+    <div class="dash">
+        <div class="dash-nav dash-nav-dark">
+            <header>
+                <a href="#" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="index.html" class="spur-logo"><i class="fas fa-trophy"></i> <span>CMS</span></a>
+            </header>
+            <nav class="dash-nav-list">
+                <a href="index.html" class="dash-nav-item">
+                    <i class="fas fa-home"></i> Dashboard </a>
+                <div class="dash-nav-dropdown">
+                    <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
+                        <i class="fas fa-plus"></i> Add New </a>
+                    
+                    <div class="dash-nav-dropdown-menu">
+                        <a href="compitition-result.html" class="dash-nav-dropdown-item">Compitition Result</a>
+                    </div>
+                    <div class="dash-nav-dropdown-menu">
+                        <a href="compitition-name.html" class="dash-nav-dropdown-item">Compitition Name</a>
+                    </div>
+                    <div class="dash-nav-dropdown-menu">
+                        <a href="major-name.html" class="dash-nav-dropdown-item">Add Major</a>
+                    </div>
+                    <div class="dash-nav-dropdown-menu">
+                        <a href="faculty-name.html" class="dash-nav-dropdown-item">Add Faculty</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="dash-app">
+            <header class="dash-toolbar">
+                <a href="#!" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <div class="tools">
+                    <div class="dropdown tools-item">
+                        <a href="#" class="" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="../login.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="dash-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card spur-card">
+                                <div class="card-header">
+                                    <div class="spur-card-icon">
+                                        <i class="fas fa-trophy"></i>
+                                    </div>
+                                    <div class="spur-card-title"> Add New Compitition Result </div>
+                                </div>
+                                <div class="card-body ">
+                                    <form method="POST">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label>Student Name</label>
+                                                <input type="text" class="form-control" placeholder="Enter Student Name" required>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Student ID</label>
+                                                <input type="number" class="form-control" placeholder="Enter Student ID" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="selectMajor">Select Major</label>
+                                            <select class="form-control" id="selectMajor" required>
+                                                <option>Computer Science and Technology</option>
+                                                <option>Artificial Intelligence </option>
+                                                <option>Communication</option>
+                                                <option>Media And Art</option>
+                                                <option>Automation</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="selectSchool">Select School</label>
+                                            <select class="form-control" id="selectSchool" required>
+                                                <option>Foreign Language School</option>
+                                                <option>School of Computer Science</option>
+                                                <option>College of Humanities</option>
+                                                <option>School of Arts and Digital Media</option>
+                                                <option>School of School of Law</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputGroup">Group</label>
+                                                <input type="text" class="form-control" id="inputGroup" placeholder="Enter Group">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="inputTitle">Title</label>
+                                                <input type="text" class="form-control" id="inputTitle" placeholder="Enter Title">
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <label for="inputGrade">Grade</label>
+                                                <input type="text" class="form-control" id="inputGrade" placeholder="Enter Grade">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <label for="inputMentor">Mentor</label>
+                                                <input type="text" class="form-control" id="inputMentor" placeholder="Enter Mentor Name">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="inputAwardLevel">Award Level</label>
+                                                <input type="text" class="form-control" id="inputAwardLevel" placeholder="Enter Award Level">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="inputLevel">Compitition Level</label>
+                                                <input type="text" class="form-control" id="inputLevel" placeholder="Enter Competition Level">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="selectSchool">Compitition Name</label>
+                                            <select class="form-control" id="selectSchool">
+                                                <option>The 8th China College Students Programming Contest</option>
+                                                <option>The 47th International Collegiate Programming Contest Asia Regional Competition (ECFinal Shanghai)</option>
+                                                <option>The 15th National College Students Advertising Art Competition</option>
+                                                <option>2023 TI Cup National Undergraduate Electronic Design Competition</option>
+                                                <option>The 14th China University Student Service Outsourcing Innovation and Entrepreneurship Competition</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-3">
+                                                <label>Performance in the College</label>
+                                                <select class="form-control" id="selectPerformance">
+                                                    <option>Yes</option>
+                                                    <option>No</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label>Year</label>
+                                                <input type="text" class="form-control" placeholder="Enter Year">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/spur.js"></script>
+</body>
+
+</html>
