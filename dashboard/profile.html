@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/spur.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="js/chart-js-config.js"></script>
     <title>CMS-DASHBOARD</title>
 </head>
 
@@ -53,7 +54,7 @@
                             <i class="fas fa-user"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                            <a class="dropdown-item" href="profile.html">Profile</a>
+                            <a class="dropdown-item" href="#">Profile</a>
                             <a class="dropdown-item" href="../login.html">Logout</a>
                         </div>
                     </div>
@@ -61,44 +62,30 @@
             </header>
             <main class="dash-content">
                 <div class="container-fluid">
-                    <div class="row dash-row">
-                        <div class="col-xl-4">
-                            <div class="stats stats-primary">
-                                <h3 class="stats-title"> Total Compitition </h3>
-                                <div class="stats-content">
-                                    <div class="stats-data">
-                                        <div class="stats-number">114</div>
-                                        <div class="stats-change">
-                                            <span class="stats-percentage">23</span>
-                                            <span class="stats-timeframe">in this year</span>
-                                        </div>
-                                    </div>
-                                </div>
+                    <!-- Profile card -->
+                    <div class="card spur-card">
+                        <div class="card-header bg-dark">
+                            <div class="spur-card-icon">
+                                <i class="fas fa-user"></i>
                             </div>
+                            <div class="spur-card-title"> Profile </div>
                         </div>
-                        <div class="col-xl-4">
-                            <div class="stats stats-success">
-                                <h3 class="stats-title"> Another Card </h3>
-                                <div class="stats-content">
-                                    <div class="stats-icon">
-                                        <i class="fas fa-phone"></i>
-                                    </div>
-                                    <div class="stats-data">
-                                        <div class="stats-number">5</div>
-                                    </div>
-                                </div>
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="img/dev_coder.png" class="img-fluid rounded-circle" style="width: 100px;" alt="Avatar">
+                                <h4 class="card-title">John Doe</h4>
+                                <h6 class="card-subtitle text-muted">Web Developer</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, elit nec tincidunt lacinia, mauris nunc lacinia nunc</p>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </main>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
     <script src="js/spur.js"></script>
 </body>
 
